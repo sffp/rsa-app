@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div>
+        {{ fig_enc|safe }}
+    </div>
+    <div>
+        {{ fig_dec|safe }}
+    </div>
+    <div>
+        {{ fig_keygen|safe }}
+    </div>
+<br />
+<br />
+<br />
+<div>
+    <a href="{{ url_for('index') }}">Back to Home Page</a>
+</div>
+</body>
+</html>
